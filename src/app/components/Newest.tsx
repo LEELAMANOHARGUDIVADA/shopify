@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image"
 
 async function getData() {
-    const query = `*[_type == 'product'][0...4] | order(_createdAt desc) {
+    const query = `*[_type == 'product'][0...8] | order(_createdAt desc) {
         _id,
           price,
           name,
@@ -29,8 +29,8 @@ export default async function Newest() {
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <div className="flex justify-between items-center">
             <div className="flex items-center justify-center">
-            <h2 className="text-3xl font-bold tracking-tight bg-foreground px-2 py-1 text-white">Our</h2>
-            <span className="bg-primary text-3xl font-bold tracking-tight px-2 py-1 text-white">Latest Arrivals</span>
+            <h2 className="lg:text-3xl text-lg font-bold tracking-tight bg-foreground px-2 py-1 text-white">Our</h2>
+            <span className="bg-primary text-lg lg:text-3xl font-bold tracking-tight px-2 py-1 text-white">Latest Arrivals</span>
             </div> 
 
             <Link href='/all' className='text-primary flex items-center gap-x-1'>
