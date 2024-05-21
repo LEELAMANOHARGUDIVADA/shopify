@@ -5,8 +5,8 @@ import { useShoppingCart } from "use-shopping-cart";
 import { urlFor } from "../lib/sanity";
 
 export interface ProductCart {
-    name: String;
-    description: String;
+    name: string;
+    description: string;
     currency: string;
     image: any;
     price: number;
